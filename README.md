@@ -1,4 +1,4 @@
-# Precious Andrew - Data Analysis Portfolio
+# Iffat A. Ahnaf - Data Analysis Portfolio
 
  This repository showcases my projects in data visualization, business intelligence, and analytics.
 
