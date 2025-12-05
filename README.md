@@ -10,18 +10,6 @@ This portfolio demonstrates my skills in:
 - Creating interactive dashboards
 - Transforming complex data into actionable insights
 
-## Projects
-
-### Healthcare Performance Analysis
-Analysis of patient admissions, billing, and demographics across US hospitals from 2019-2024.
-
-### Renewable Energy Consumption (USA)
-Analysis of US renewable energy trends from 1970 to present, by source and sector.
-
-### US Electricity Generation Analysis
-Examination of electricity generation patterns and CO2 emissions across US states.
-
-
 ## Skills
 
 - **Data Visualization**: Power BI, Tableau
