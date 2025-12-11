@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iffat Ayman Ahnaf | Portfolio</title>
-      <!-- 👇 ADD THESE TWO LINES FOR YOUR FAVICON 👇 -->
-    <link rel="icon" type="image/png" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="/favicon-32x32.png">
-    
-    <!-- 👆 END OF FAVICON LINES 👆 -->
-    
-    <!-- Google Fonts for Elegant Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Your Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/favicon-32x32.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        /* Language Switcher */
+        .lang-switcher {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 999;
+            background: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            font-family: Lato, sans-serif;
+        }
+        .lang-switcher a {
+            margin: 0 6px;
+            cursor: pointer;
+            font-weight: 700;
+            color: #333;
+        }
+        .lang-switcher a.active {
+            color: #ff7a00;
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- HEADER SECTION -->
+<!-- LANGUAGE SWITCHER -->
+<div class="lang-switcher">
+    <a onclick="setLanguage('en')" id="btn-en" class="active">EN</a> |
+    <a onclick="setLanguage('id')" id="btn-id">ID</a>
+</div>
+
+<!-- HEADER -->
 <header>
     <div class="container">
-        <h1>Iffat Ayman Ahnaf</h1>
-        <p>Data Analyst in Training </p>
+        <h1 data-en="Iffat Ayman Ahnaf" data-id="Iffat Ayman Ahnaf"></h1>
+        <p data-en="Data Analyst in Training" data-id="Calon Data Analyst"></p>
+
         <div class="social-links">
-            <!-- CORRECTED LINKS -->
-            <a href="https://www.linkedin.com/in/iffatahnaf/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/iffatahnaf2025" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="assets/Iffat_CV.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
+            <a href="https://www.linkedin.com/in/iffatahnaf/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/iffatahnaf2025" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="assets/Iffat_CV.pdf" download><i class="fas fa-file-arrow-down"></i></a>
         </div>
     </div>
 </header>
@@ -42,133 +72,158 @@
 <nav>
     <div class="container">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-en="About" data-id="Tentang">About</a></li>
+            <li><a href="#projects" data-en="Projects" data-id="Projek">Projects</a></li>
+            <li><a href="#skills" data-en="Skills" data-id="Keahlian">Skills</a></li>
+            <li><a href="#contact" data-en="Contact" data-id="Kontak">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- ABOUT SECTION -->
+<!-- ABOUT -->
 <section id="about" class="section">
     <div class="container">
-        <h2>About Me</h2>
+        <h2 data-en="About Me" data-id="Tentang Saya"></h2>
         <div class="about-content">
-            <img src="assets/images/Photo Profile.jpg" alt="Iffat Ayman Ahnaf" class="profile-photo">
+            <img src="assets/images/Photo Profile.jpg" class="profile-photo" />
+
             <div class="about-text">
-                <p> I hold a degree in Islamic Economics and am currently advancing my expertise in Data Analytics to connect business insights with data-driven decision-making.</p>
-                <p> With a solid background in economic, I thrive on transforming complex datasets into actionable insights that drive strategic decisions and enhance performance. My key interests lie in leveraging data to understand customer behavior, streamline operations, and predict future trends.</p>
-                
+                <p data-en="I hold a degree in Islamic Economics and am currently advancing my expertise in Data Analytics to connect business insights with data-driven decision-making."
+                   data-id="Saya lulusan Ekonomi Islam dan saat ini sedang memperdalam Data Analytics untuk menghubungkan insight bisnis dengan pengambilan keputusan berbasis data."></p>
+
+                <p data-en="With a solid background in economics, I enjoy transforming complex datasets into insights that support strategic decision-making."
+                   data-id="Dengan latar belakang ekonomi, saya senang mengubah dataset kompleks menjadi insight yang mendukung pengambilan keputusan strategis."></p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- PROJECTS SECTION -->
+<!-- PROJECTS -->
 <section id="projects" class="section">
     <div class="container">
-        <h2>My Projects</h2>
+        <h2 data-en="My Projects" data-id="Projek Saya"></h2>
+
         <div class="projects-grid">
 
-            <!-- Project: RFM Segmentation -->
+            <!-- RFM -->
             <div class="project-card">
-                <img src="assets/images/RFM Segmentation.png" alt="RFM Segmentation">
+                <img src="assets/images/RFM Segmentation.png" />
                 <div class="project-card-content">
-                    <h3>RFM Customer Segmentation Dashboard </h3>
-                    <p>Super Store Customer Segmentation Analysis Based on Recency, Frequency, and Monetary Model to Identify High-Value Customers and Optimize Business Strategy.</p>
+                    <h3 data-en="RFM Customer Segmentation Dashboard"
+                        data-id="Dashboard Segmentasi Pelanggan RFM"></h3>
+
+                    <p data-en="Customer segmentation analysis using Recency, Frequency, and Monetary scoring to identify high-value customers and optimize business strategy."
+                       data-id="Analisis segmentasi pelanggan menggunakan Recency, Frequency, dan Monetary untuk mengidentifikasi pelanggan bernilai tinggi dan mengoptimalkan strategi bisnis."></p>
+
                     <div class="project-buttons">
-                        <a href="https://docs.google.com/document/d/1rLQ_xEGe7gPtyjD4VGH0v_D1dqe8QbRvXz6BEq7-qSI/edit?usp=sharing" class="btn">Documentation</a>
-                        <a href="https://app.powerbi.com/groups/me/reports/d9cb1296-377c-499b-8471-5bb214c2acc3/b3f159c48e2e69ee3c8e?experience=power-bi" class="btn">View Dashboard</a>
+                        <a href="https://docs.google.com/document/d/1rLQ_xEGe7gPtyjD4VGH0v_D1dqe8QbRvXz6BEq7-qSI/edit?usp=sharing" class="btn"
+                           data-en="Documentation" data-id="Dokumentasi"></a>
+
+                        <a href="https://app.powerbi.com/groups/me/reports/d9cb1296-377c-499b-8471-5bb214c2acc3/b3f159c48e2e69ee3c8e?experience=power-bi" class="btn"
+                           data-en="View Dashboard" data-id="Lihat Dashboard"></a>
                     </div>
                 </div>
             </div>
 
-             <!-- Project: SQL Basic - Advance -->
-             <div class="project-card">
-                <img src="assets/images/sql basic to advance.png" alt="Case Study SQL: Basic to Advance">
-                <div class="project-card-content">
-                    <h3>Case Study SQL: Basic to Advance</h3>
-                    <p>This project presents a structured SQL case study using PostgreSQL on the dvdrental and dibimbing databases, demonstrating core data analysis skills through basic to advanced queries such as DDL, DML, joins, subqueries, aggregations, window functions, and CTEs.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/iffatahnaf2025/Case-Study-SQL-Basic-Advanced/blob/main/README.md" class="btn">Documentation</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project: Web Scraping -->
-             <div class="project-card">
-                <img src="assets/images/web scraping.png" alt="Case Study: web scraping">
-                <div class="project-card-content">
-                    <h3>Web Scraping: Data Analyst Job Vacancy</h3>
-                    <p>This notebook shows the end-to-end workflow of scraping job listings from Jobstreet, cleaning the collected data, and performing exploratory analysis to identify top hiring companies, most active cities, and the most in-demand job categories.</p>
-                    <div class="project-buttons">
-                        <a href="https://colab.research.google.com/drive/1OXE_Di3vyMRAYNXrb6JfMYBW5Ue6s4cq?usp=sharing" class="btn">Open Notebook</a>
-                    </div>
-                </div>
-            </div>
-
-             <!-- Project: Data Manipulation -->
+            <!-- SQL -->
             <div class="project-card">
-                <img src="assets/images/data manipulation.png" alt="Data Manipulation">
+                <img src="assets/images/sql basic to advance.png" />
                 <div class="project-card-content">
-                    <h3>Python Case Study: Data Manipulation </h3>
-                    <p>This notebook is a data analysis assignment on supermarket sales dataset. The primary goal is to apply data manipulation techniques (Filtering, Sorting, Grouping/Aggregation, Join/Merging, Pivot, Crosstab, Appending, and Datetime operations) to gain insights from the data.</p>
+                    <h3 data-en="Case Study SQL: Basic to Advance"
+                        data-id="Studi Kasus SQL: Dasar hingga Lanjutan"></h3>
+
+                    <p data-en="A structured SQL project using PostgreSQL with topics including joins, subqueries, aggregations, window functions, and CTEs."
+                       data-id="Projek SQL terstruktur menggunakan PostgreSQL mencakup join, subquery, agregasi, window function, dan CTE."></p>
+
                     <div class="project-buttons">
-                        <a href="https://colab.research.google.com/drive/1wYs2RawWmEtZwIBMVjusRueKfh7DbJre?usp=sharing" class="btn">Open Notebook</a>
+                        <a href="https://github.com/iffatahnaf2025/Case-Study-SQL-Basic-Advanced/blob/main/README.md" class="btn"
+                           data-en="Documentation" data-id="Dokumentasi"></a>
                     </div>
                 </div>
             </div>
-                       
+
+            <!-- Web Scraping -->
+            <div class="project-card">
+                <img src="assets/images/web scraping.png" />
+                <div class="project-card-content">
+                    <h3 data-en="Web Scraping: Data Analyst Job Vacancy"
+                        data-id="Web Scraping: Lowongan Kerja Data Analyst"></h3>
+
+                    <p data-en="A full workflow of scraping job listings, cleaning data, and analyzing top companies and job categories."
+                       data-id="Workflow lengkap scraping lowongan kerja, pembersihan data, dan analisis perusahaan serta kategori pekerjaan."></p>
+
+                    <div class="project-buttons">
+                        <a href="https://colab.research.google.com/drive/1OXE_Di3vyMRAYNXrb6JfMYBW5Ue6s4cq?usp=sharing" class="btn"
+                           data-en="Open Notebook" data-id="Buka Notebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Manipulation -->
+            <div class="project-card">
+                <img src="assets/images/data manipulation.png" />
+                <div class="project-card-content">
+                    <h3 data-en="Python Case Study: Data Manipulation"
+                        data-id="Studi Kasus Python: Manipulasi Data"></h3>
+
+                    <p data-en="Applying filtering, grouping, merging, pivoting, and datetime operations to analyze supermarket sales data."
+                       data-id="Menerapkan filtering, grouping, merging, pivot, dan operasi datetime untuk menganalisis data penjualan supermarket."></p>
+
+                    <div class="project-buttons">
+                        <a href="https://colab.research.google.com/drive/1wYs2RawWmEtZwIBMVjusRueKfh7DbJre?usp=sharing" class="btn"
+                           data-en="Open Notebook" data-id="Buka Notebook"></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- ======================================================================
-     NEW TABULAR SKILLS SECTION
-     ====================================================================== -->
+<!-- SKILLS -->
 <section id="skills" class="section">
     <div class="container">
-        <h2>Technical Skillset</h2>
+        <h2 data-en="Technical Skillset" data-id="Keahlian Teknis"></h2>
+
         <div class="skills-table">
 
-            <!-- Column 1: Data Visualization -->
+            <!-- Visualization -->
             <div class="skill-column">
                 <div class="skill-header">
                     <i class="fas fa-chart-pie"></i>
-                    <h3>Data Visualization</h3>
+                    <h3 data-en="Data Visualization" data-id="Visualisasi Data"></h3>
                 </div>
                 <ul class="skill-list">
                     <li>Power BI</li>
-                    <li>Excel Dashboards</li>
+                    <li>Excel Dashboard</li>
                     <li>Tableau</li>
                 </ul>
             </div>
 
-            <!-- Column 2: Data Analysis -->
+            <!-- Analysis -->
             <div class="skill-column">
                 <div class="skill-header">
                     <i class="fas fa-search-plus"></i>
-                    <h3>Data Analysis</h3>
+                    <h3 data-en="Data Analysis" data-id="Analisis Data"></h3>
                 </div>
                 <ul class="skill-list">
                     <li>SQL</li>
                     <li>Python</li>
-                    <li>Data Cleaning & Transformation</li>
+                    <li data-en="Data Cleaning & Transformation" data-id="Pembersihan & Transformasi Data"></li>
                 </ul>
             </div>
 
-            <!-- Column 3: Business & Analytics -->
+            <!-- Business -->
             <div class="skill-column">
                 <div class="skill-header">
                     <i class="fas fa-briefcase"></i>
-                    <h3>Business & Analytics</h3>
+                    <h3 data-en="Business & Analytics" data-id="Bisnis & Analitik"></h3>
                 </div>
                 <ul class="skill-list">
-                    <li>Economic & Business Analysis</li>
+                    <li data-en="Economic & Business Analysis" data-id="Analisis Ekonomi & Bisnis"></li>
                     <li>KPI Development</li>
-                    <li>Basic Forecasting</li>
-                    <li>Insight & Reporting</li>
+                    <li data-en="Basic Forecasting" data-id="Peramalan Dasar"></li>
+                    <li data-en="Insight & Reporting" data-id="Insight & Pelaporan"></li>
                 </ul>
             </div>
 
@@ -176,40 +231,38 @@
     </div>
 </section>
 
-<!-- CONTACT FORM SECTION - CORRECTED AND CLEANED -->
+<!-- CONTACT -->
 <section id="contact" class="section">
     <div class="container">
-        <h2>Send me a message</h2>
+        <h2 data-en="Send me a message" data-id="Kirim pesan"></h2>
+
+        <p data-en="Interested in collaborating or have questions about my work? Kindly reach out!"
+           data-id="Tertarik berkolaborasi atau ada pertanyaan mengenai pekerjaan saya? Silakan hubungi saya!"></p>
+
         <form action="https://formsubmit.co/iffat.ahnaf.2025@gmail.com" method="POST" class="contact-form">
-        <p> Interested in collaborating or have questions about my work? Kindly reach out! </p>
+            <input type="hidden" name="access_key" value="6f007fe2-240e-422a-97f1-c34ffd71aa11" />
 
-            <!-- 🚨 IMPORTANT: Replace with your actual Access Key from Web3Forms -->
-            <input type="hidden" name="access_key" value="6f007fe2-240e-422a-97f1-c34ffd71aa11">
+            <div class="form-group">
+                <label data-en="Name" data-id="Nama"></label>
+                <input type="text" name="name" placeholder="Your name" required />
+            </div>
 
-            <!-- Form Fields -->
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your name" required>
+                <label data-en="Email" data-id="Email"></label>
+                <input type="email" name="email" placeholder="Your email" required />
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
-            </div>
-            
-            <!-- Honeypot Spam Protection (Optional but Recommended) -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-            <!-- Submit Button -->
-            <button type="submit" class="btn">Send Message</button>
+            <div class="form-group">
+                <label data-en="Subject" data-id="Subjek"></label>
+                <input type="text" name="subject" placeholder="Subject" required />
+            </div>
 
+            <div class="form-group">
+                <label data-en="Message" data-id="Pesan"></label>
+                <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn" data-en="Send Message" data-id="Kirim Pesan"></button>
         </form>
     </div>
 </section>
@@ -217,11 +270,32 @@
 <!-- FOOTER -->
 <footer>
     <div class="container">
-        <p>&copy; 2025 Iffat Ayman Ahnaf. All rights reserved.</p>
+        <p data-en="© 2025 Iffat Ayman Ahnaf. All rights reserved."
+           data-id="© 2025 Iffat Ayman Ahnaf. Hak cipta dilindungi."></p>
     </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script>
+/* ================================
+   LANGUAGE SWITCHER SCRIPT
+================================ */
+function setLanguage(lang) {
+    document.querySelectorAll("[data-en]").forEach(el => {
+        el.innerHTML = el.getAttribute("data-" + lang);
+    });
+
+    // Toggle active button
+    document.getElementById("btn-en").classList.toggle("active", lang === "en");
+    document.getElementById("btn-id").classList.toggle("active", lang === "id");
+
+    // Persist language selection
+    localStorage.setItem("lang", lang);
+}
+
+// Load saved language on refresh
+const savedLang = localStorage.getItem("lang") || "en";
+setLanguage(savedLang);
+</script>
 
 </body>
 </html>
